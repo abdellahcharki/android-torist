@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/horezontal_recycler_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        app:cardCornerRadius="7dp">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/avatar"
+            android:contentDescription="TODO" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/place_name" />
+</LinearLayout>
