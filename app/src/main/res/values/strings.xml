@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Blank</string>
     <string name="place_name">place name</string>
+    <string name="todo">TODO</string>
 </resources>

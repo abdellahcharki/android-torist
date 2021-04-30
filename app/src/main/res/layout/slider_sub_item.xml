@@ -8,17 +8,17 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="246dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="7dp">
 
         <ImageView
-            android:layout_width="260dp"
-            android:layout_height="260dp"
+            android:layout_width="@dimen/home_card_dimen"
+            android:layout_height="@dimen/home_card_dimen"
             android:background="@mipmap/ic_launcher"
+            android:contentDescription="TODO"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/avatar"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/avatar" />
     </androidx.cardview.widget.CardView>
 
     <TextView

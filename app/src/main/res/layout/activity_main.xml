@@ -10,7 +10,7 @@
 <!--  Nav bar   -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/action_bar_height"
          android:padding="5dp"
         >
 
