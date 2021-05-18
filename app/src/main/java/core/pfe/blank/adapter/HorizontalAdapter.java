@@ -4,7 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +36,7 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.It
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         holder.subTitle.setText(horizontalList.get(position));
+        // holder.imageItem
     }
 
     @Override
@@ -41,11 +44,18 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.It
         return horizontalList.size();
     }
 
-    public class ItemViewHolder extends RecyclerView.ViewHolder {
+    public class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView subTitle;
+        ImageView imageItem;
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             subTitle = itemView.findViewById(R.id.sub_title);
+            imageItem=itemView.findViewById(R.id.image_item);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(context,"click",Toast.LENGTH_LONG).show();
         }
     }
 }

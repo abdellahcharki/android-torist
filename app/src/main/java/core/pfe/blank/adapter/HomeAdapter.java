@@ -54,11 +54,17 @@ public class HomeAdapter extends RecyclerView.Adapter{
             h.textView.setText(sliderItem.getTitle());
 
             ArrayList<String> sublist = new ArrayList<>();
-            sublist.add("dhdhd");
-            sublist.add("dhdhd");
-            sublist.add("dhdhd");
-            sublist.add("dhdhd");
-            sublist.add("dhdhd");
+            // fitching sub data
+            sublist.add("Dar Dbagh Chouara A Fes");
+            sublist.add("This file contains additional");
+            sublist.add(" Exif metadata which may have been");
+            sublist.add("the digital camera, scanner");
+            sublist.add("The timestamp is only as");
+            sublist.add("Dar Dbagh Chouara A Fes");
+            sublist.add("This file contains additional");
+            sublist.add(" Exif metadata which may have been");
+            sublist.add("the digital camera, scanner");
+            sublist.add("The timestamp is only as");
 
 
 HorizontalAdapter horizontalAdapter = new HorizontalAdapter(context,sublist);
