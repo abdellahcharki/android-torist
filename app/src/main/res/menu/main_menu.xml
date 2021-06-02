@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
-
-    >
-
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/home"
@@ -13,14 +8,17 @@
         android:id="@+id/nav_profile"
         android:icon="@drawable/user"
         android:title="Account" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+
     <item
         android:id="@+id/nav_fav"
         android:icon="@drawable/heart"
         android:title="Favorites" />
-    <item
-        android:id="@+id/nav_trips"
-        android:icon="@drawable/map_trip"
-        android:title="Trips" />
     <item
         android:id="@+id/nav_maps"
         android:icon="@drawable/map_trip"
@@ -32,8 +30,6 @@
 
     <item
         android:id="@+id/nav_contacts"
-        android:icon="@drawable/map_trip"
+        android:icon="@drawable/mail"
         android:title="Contact Us" />
-
-
 </menu>

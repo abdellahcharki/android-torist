@@ -7,9 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity"
-    tools:openDrawer="start"
-    >
-
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -24,59 +22,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg13"
         android:orientation="vertical">
 
-        <RelativeLayout
+
+        <include layout="@layout/tool_bar" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/action_bar_height"
-            android:padding="5dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/menu_icon"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_margin="5dp"
-                android:background="#00DDDDDD"
-                android:contentDescription="TODO"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_alignParentRight="true"
-                android:layout_margin="7dp"
-                app:cardCornerRadius="100dp">
-
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/teal_700"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/avatar"
-
-                    />
-            </androidx.cardview.widget.CardView>
-
-        </RelativeLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent" />
 
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/main_recycler"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-            </LinearLayout>
-        </ScrollView>
+        </LinearLayout>
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

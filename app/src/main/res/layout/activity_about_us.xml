@@ -6,4 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".activity.AboutUsActivity">
 
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
